@@ -5,7 +5,7 @@ namespace BlogPostTutorials.TernaryOperator.UnitTests;
 public class HelpersMethodTests
 {
     [Fact]
-    public void BasicTernaryOperator_Returns_Valor1GreaterThanValor2()
+    public void BasicTernaryOperator_Retorna_Valor1MayorQueValor2()
     {
         // Arrange
         int valor1 = 10;
@@ -19,7 +19,7 @@ public class HelpersMethodTests
     }
 
     [Fact]
-    public void BasicTernaryOperator_Returns_Valor2_Greater_Than_Valor1()
+    public void BasicTernaryOperator_Retorna_Valor2_MayorQueValor1()
     {
         // Arrange
         int valor1 = 10;
@@ -33,7 +33,7 @@ public class HelpersMethodTests
     }
 
     [Fact]
-    public void NestedTernaryOperator_Returns_Valor1GreaterThanValor2()
+    public void NestedTernaryOperator_Retorna_Valor1MayorQueValor2()
     {
         // Arrange
         int valor1 = 10;
@@ -47,7 +47,7 @@ public class HelpersMethodTests
     }
 
     [Fact]
-    public void NestedTernaryOperator_Returns_Valor2GreaterThanValor1()
+    public void NestedTernaryOperator_Retorna_Valor2MayorQueValor1()
     {
         // Arrange
         int valor1 = 10;
@@ -61,7 +61,7 @@ public class HelpersMethodTests
     }
 
     [Fact]
-    public void NestedTernaryOperator_Returns_Valor1EqualThanValor2()
+    public void NestedTernaryOperator_Retorna_Valor1IgualQueValor2()
     {
         // Arrange
         int valor1 = 100;
@@ -77,7 +77,7 @@ public class HelpersMethodTests
     [Theory]
     [InlineData(50, 200)]
     [InlineData(150, 5000)]
-    public void ConditionalRef_Assigns_ValorAsignar_ByReferenceToArray(int valorComparar, int valorAsignar)
+    public void ConditionalRef_Asigna_ValorAsignar_PorReferenciaAlArray(int valorComparar, int valorAsignar)
     {
         // Arrange - Collection Expression syntax
         int[] numeros = [1, 2, 3, 4, 5];

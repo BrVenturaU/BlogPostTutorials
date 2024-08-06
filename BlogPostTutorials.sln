@@ -7,9 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8ABCAD0B-875
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlogPostTutorials.TernaryOperator", "BlogPostTutorials.TernaryOperator", "{B997FB6B-F423-4652-8985-F32A4E28C413}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogPostTutorials.TernaryOperator.Console", "src\BlogPostTutorials.TernaryOperator\BlogPostTutorials.TernaryOperator.Console\BlogPostTutorials.TernaryOperator.Console.csproj", "{45984DE3-9E25-44D4-946C-B4033DCF0FBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogPostTutorials.TernaryOperator.Console", "src\BlogPostTutorials.TernaryOperator\BlogPostTutorials.TernaryOperator.Console\BlogPostTutorials.TernaryOperator.Console.csproj", "{45984DE3-9E25-44D4-946C-B4033DCF0FBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogPostTutorials.TernaryOperator.UnitTests", "src\BlogPostTutorials.TernaryOperator\BlogPostTutorials.TernaryOperator.UnitTests\BlogPostTutorials.TernaryOperator.UnitTests.csproj", "{F0575DB0-8094-4D80-B82D-1D979957F294}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogPostTutorials.TernaryOperator.UnitTests", "src\BlogPostTutorials.TernaryOperator\BlogPostTutorials.TernaryOperator.UnitTests\BlogPostTutorials.TernaryOperator.UnitTests.csproj", "{F0575DB0-8094-4D80-B82D-1D979957F294}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlogPostTutorials.PrimaryConstructor", "BlogPostTutorials.PrimaryConstructor", "{F077F876-3210-4612-8D07-DCAD1782E66B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogPostTutorials.PrimaryConstructor.Console", "src\BlogPostTutorials.PrimaryConstructor\BlogPostTutorials.PrimaryConstructor.Console\BlogPostTutorials.PrimaryConstructor.Console.csproj", "{572849DB-CDAD-4C85-AACA-B56229A69F7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,10 @@ Global
 		{F0575DB0-8094-4D80-B82D-1D979957F294}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0575DB0-8094-4D80-B82D-1D979957F294}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0575DB0-8094-4D80-B82D-1D979957F294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{572849DB-CDAD-4C85-AACA-B56229A69F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{572849DB-CDAD-4C85-AACA-B56229A69F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{572849DB-CDAD-4C85-AACA-B56229A69F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{572849DB-CDAD-4C85-AACA-B56229A69F7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -33,6 +41,8 @@ Global
 		{B997FB6B-F423-4652-8985-F32A4E28C413} = {8ABCAD0B-8756-4F9B-9E25-90F7D52344A6}
 		{45984DE3-9E25-44D4-946C-B4033DCF0FBF} = {B997FB6B-F423-4652-8985-F32A4E28C413}
 		{F0575DB0-8094-4D80-B82D-1D979957F294} = {B997FB6B-F423-4652-8985-F32A4E28C413}
+		{F077F876-3210-4612-8D07-DCAD1782E66B} = {8ABCAD0B-8756-4F9B-9E25-90F7D52344A6}
+		{572849DB-CDAD-4C85-AACA-B56229A69F7D} = {F077F876-3210-4612-8D07-DCAD1782E66B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8E4E7DB4-EB5C-4FEF-AD7F-F16D0FFFD9C9}

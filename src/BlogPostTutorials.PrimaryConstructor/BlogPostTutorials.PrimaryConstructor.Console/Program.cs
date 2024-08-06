@@ -2,8 +2,8 @@
 
 //var persona = new Persona("John Doe", 30);
 // Error en tiempo de compilación, los miembros no existen en Persona.
-//persona.Nombre = "";
-//persona.Edad;
+//persona.nombre = "";
+//persona.edad;
 
 //var personaRecord = new PersonaRecord("John Doe", 30);
 // Los miembros son accesibles en el tipo PersonaRecord

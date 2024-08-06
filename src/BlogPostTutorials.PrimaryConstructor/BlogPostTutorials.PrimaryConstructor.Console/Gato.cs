@@ -52,9 +52,9 @@ public class Gato
         Color = gato.Color;
     }
 
-    public Gato CopiarGato(Gato gato)
+    public Gato CopiarGato()
     {
-        return gato;
+        return this;
     }
 
     public string ObtenerInformacionGato()

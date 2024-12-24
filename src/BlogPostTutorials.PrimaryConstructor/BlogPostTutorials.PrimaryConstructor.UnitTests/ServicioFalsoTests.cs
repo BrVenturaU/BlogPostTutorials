@@ -1,4 +1,5 @@
 ﻿using BlogPostTutorials.PrimaryConstructor.Console;
+using FluentAssertions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,8 +21,9 @@ namespace BlogPostTutorials.PrimaryConstructor.UnitTests
             var nuevoTexto = servicio.RetornaTextoMayuscula(texto);
 
             // Assert
-            Assert.NotEqual(texto, nuevoTexto);
-            Assert.Equal(texto.ToUpper(), nuevoTexto);
+            nuevoTexto.Should()
+                .NotBe(texto)
+                .And.NotBeLowerCased();
         }
 
     }

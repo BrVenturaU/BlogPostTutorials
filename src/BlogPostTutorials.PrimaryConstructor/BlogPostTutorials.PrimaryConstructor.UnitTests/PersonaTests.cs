@@ -1,4 +1,5 @@
 ﻿using BlogPostTutorials.PrimaryConstructor.Console;
+using FluentAssertions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,8 +23,8 @@ namespace BlogPostTutorials.PrimaryConstructor.UnitTests
             persona.Formatear();
 
             // Assert
-
-            Assert.NotEqual(nombrePersona, persona.Nombre);
+            persona.Nombre.Should()
+                .NotBe(nombrePersona);
         }
     }
 }

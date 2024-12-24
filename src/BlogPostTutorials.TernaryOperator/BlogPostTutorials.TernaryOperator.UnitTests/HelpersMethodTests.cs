@@ -1,4 +1,6 @@
 using BlogPostTutorials.TernaryOperator.Console;
+using FluentAssertions;
+using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities;
 
 namespace BlogPostTutorials.TernaryOperator.UnitTests;
 
@@ -15,7 +17,9 @@ public class HelpersMethodTests
         string mensaje = HelperMethods.BasicTernaryOperator(valor1, valor2);
 
         // Assert
-        Assert.Equal("El primer valor es mayor que el segundo.", mensaje);
+        mensaje.Should()
+            .NotBeNullOrEmpty()
+            .And.BeEquivalentTo("El primer valor es mayor que el segundo.");
     }
 
     [Fact]
@@ -29,7 +33,9 @@ public class HelpersMethodTests
         string mensaje = HelperMethods.BasicTernaryOperator(valor1, valor2);
 
         // Assert
-        Assert.Equal("El segundo valor es mayor que el primero.", mensaje);
+        mensaje.Should()
+            .NotBeNullOrEmpty()
+            .And.BeEquivalentTo("El segundo valor es mayor que el primero.");
     }
 
     [Fact]
@@ -43,7 +49,9 @@ public class HelpersMethodTests
         string mensaje = HelperMethods.NestedTernaryOperator(valor1, valor2);
 
         // Assert
-        Assert.Equal("El primer valor es mayor que el segundo.", mensaje);
+        mensaje.Should()
+            .NotBeNullOrEmpty()
+            .And.BeEquivalentTo("El primer valor es mayor que el segundo.");
     }
 
     [Fact]
@@ -57,7 +65,9 @@ public class HelpersMethodTests
         string mensaje = HelperMethods.NestedTernaryOperator(valor1, valor2);
 
         // Assert
-        Assert.Equal("El segundo valor es mayor que el primero.", mensaje);
+        mensaje.Should()
+            .NotBeNullOrEmpty()
+            .And.BeEquivalentTo("El segundo valor es mayor que el primero.");
     }
 
     [Fact]
@@ -71,7 +81,9 @@ public class HelpersMethodTests
         string mensaje = HelperMethods.NestedTernaryOperator(valor1, valor2);
 
         // Assert
-        Assert.Equal("El primer valor y el segundo son iguales.", mensaje);
+        mensaje.Should()
+            .NotBeNullOrEmpty()
+            .And.BeEquivalentTo("El primer valor y el segundo son iguales.");
     }
 
     [Theory]
@@ -86,6 +98,7 @@ public class HelpersMethodTests
         HelperMethods.ConditionalRef(numeros, valorComparar, valorAsignar);
 
         // Assert
-        Assert.Contains(valorAsignar, numeros);
+        numeros.Should()
+            .Contain(valorAsignar);
     }
 }

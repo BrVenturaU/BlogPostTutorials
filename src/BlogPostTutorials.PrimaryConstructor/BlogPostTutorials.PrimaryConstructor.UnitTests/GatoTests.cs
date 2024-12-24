@@ -1,4 +1,5 @@
 using BlogPostTutorials.PrimaryConstructor.Console;
+using FluentAssertions;
 
 namespace BlogPostTutorials.PrimaryConstructor.UnitTests
 {
@@ -14,8 +15,9 @@ namespace BlogPostTutorials.PrimaryConstructor.UnitTests
             var gatoCopia = new Gato(gato);
 
             // Assert
-
-            Assert.NotSame(gato, gatoCopia);
+            gatoCopia.Should()
+                .BeEquivalentTo(gato)
+                .And.NotBeSameAs(gato);
         }
 
         [Fact]
@@ -30,8 +32,8 @@ namespace BlogPostTutorials.PrimaryConstructor.UnitTests
             var informacionGatoCopia = gatoCopia.ObtenerInformacionGato();
 
             // Assert
-
-            Assert.Equal(informacionGato, informacionGatoCopia);
+            informacionGatoCopia.Should()
+                .Be(informacionGato);
         }
 
         [Fact]
@@ -45,8 +47,8 @@ namespace BlogPostTutorials.PrimaryConstructor.UnitTests
             gatoCopia.Nombre = "Harry";
 
             // Assert
-
-            Assert.NotEqual(gato.Nombre, gatoCopia.Nombre);
+            gatoCopia.Nombre.Should()
+                .NotBe(gato.Nombre);
         }
 
         [Fact]
@@ -59,8 +61,9 @@ namespace BlogPostTutorials.PrimaryConstructor.UnitTests
             var gatoCopia = gato.CopiarGato();
 
             // Assert
-            Assert.Same(gato, gatoCopia);
-
+            gatoCopia.Should()
+                .BeEquivalentTo(gato)
+                .And.BeSameAs(gato);
         }
 
         [Fact]
@@ -74,7 +77,8 @@ namespace BlogPostTutorials.PrimaryConstructor.UnitTests
             gatoCopia.Nombre = "Harry";
 
             // Assert
-            Assert.Equal(gato.Nombre, gatoCopia.Nombre);
+            gatoCopia.Nombre.Should()
+                .Be(gato.Nombre);
 
         }
     }

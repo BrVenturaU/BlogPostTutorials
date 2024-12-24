@@ -1,4 +1,5 @@
 ﻿using BlogPostTutorials.PrimaryConstructor.Console;
+using FluentAssertions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +25,7 @@ namespace BlogPostTutorials.PrimaryConstructor.UnitTests
             var mensaje = otroServicio.ObtenerMensaje();
 
             // Assert
-            Assert.NotEmpty(mensaje);
+            mensaje.Should().NotBeNullOrEmpty();
         }
 
         [Fact]
@@ -36,9 +37,11 @@ namespace BlogPostTutorials.PrimaryConstructor.UnitTests
 
             // Act
             otroServicio.HacerAlgo();
+            Func<string> func = otroServicio.ObtenerMensaje;
 
             // Assert
-            Assert.Throws<NullReferenceException>(otroServicio.ObtenerMensaje);
+            func.Should()
+                .Throw<NullReferenceException>();
         }
     }
 }

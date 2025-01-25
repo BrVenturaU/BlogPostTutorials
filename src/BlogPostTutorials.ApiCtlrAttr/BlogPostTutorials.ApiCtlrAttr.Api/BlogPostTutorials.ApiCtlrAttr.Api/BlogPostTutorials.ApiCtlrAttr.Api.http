@@ -1,0 +1,38 @@
+@host = http://localhost:5296
+@personaId = 1
+
+GET {{host}}/Personas/{{personaId}}
+Accept: application/json
+
+###
+
+POST {{host}}/Personas/CrearPersona1
+Content-Type: application/json
+
+{
+  "Id": 1,
+  "Nombre": "John",
+  "Edad": 21
+}
+
+###
+
+POST {{host}}/Personas/CrearPersona2
+Content-Type: application/json
+
+{
+  "Id": 1,
+  "Nombre": "John",
+  "Edad": 21
+}
+
+###
+
+POST {{host}}/Personas/CrearPersona3
+Content-Type: application/json
+
+{
+  "Id": 1,
+  "Nombre": "John",
+  "Edad": 21
+}
